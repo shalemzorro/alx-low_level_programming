@@ -1,7 +1,7 @@
-#!/bin/bash
 #include <studio.h>
 /**
- * Description: main - Prints out a string to stdout.
+ * main - entry point
+ *
  * Return: 0 if success.
  */
 int main(void)
