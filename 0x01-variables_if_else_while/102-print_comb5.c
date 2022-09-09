@@ -16,10 +16,10 @@ int main(void)
 		for (i = '0'; i <= '9'; i++)
 		{
 			putchar(c);
-			putchar(c);
+			putchar(i);
 			putchar(' ');
 			putchar(i);
-			putchar(i);
+			putchar(c);
 
 			if ((c != '9') || (c == '9' && i != '9'))
 			{
