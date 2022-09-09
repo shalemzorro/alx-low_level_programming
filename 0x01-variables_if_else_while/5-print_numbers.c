@@ -1,20 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - Prints all single digit numbers of base ten
+ * main - Prints all single digits from 0 to 9
  *
  * Return: Always (Success)
  */
 int main(void)
 {
-	char n;
+	int i;
 
-	for (n = 0; n <= 9; n++)
+	for (i = 0; i <= 9; i++)
 	{
-		putchar(n);
+		printf("i%, i);
 	}
 
-	putchar('\n');
+	printf('\n');
 
 	return (0);
 }
