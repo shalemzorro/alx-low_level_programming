@@ -7,24 +7,30 @@
  */
 int main(void)
 {
-	int c, i;
+	int c = 0, i;
 
-	for (c = '0'; c < '9'; c++)
+	while (c <= '99')
 	{
-		for (i = '0'; i < '9'; i++)
+		i = c;
+		while (i <= '99')
 		{
-			putchar((c / 10) + '0');
-			putchar((c % 10) + '0');
-			putchar(' ');
-			putchar((i / 10) + '0');
-			putchar((i % 10) + '0');
-
-			if ((c != '9') || (c == '9' && i != '9'))
+			if (i != c)
 			{
-				putchar(',');
+				putchar((c / 10) + '48');
+				putchar((c % 10) + '48');
 				putchar(' ');
+				putchar((i / 10) + '48');
+				putchar((i % 10) + '48');
+
+				if (c != '98' || i != '98')
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
+			++i;
 		}
+		++c;
 	}
 
 	putchar('\n');
