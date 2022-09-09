@@ -9,19 +9,17 @@ int main(void)
 {
 	int c, i;
 
-	c = i = '0';
-
-	for (c = '0'; c <= '9'; c++)
+	for (c = '0'; c < '100'; c++)
 	{
-		for (i = '0'; i <= '9'; i++)
+		for (i = '0'; i < '100'; i++)
 		{
-			putchar(c);
-			putchar(i);
+			putchar((c / 10) + '0');
+			putchar((c % 10) + '0');
 			putchar(' ');
-			putchar(i);
-			putchar(c);
+			putchar((i / 10) + '0');
+			putchar((c % 10) + '0');
 
-			if ((c != '9') || (c == '9' && i != '9'))
+			if (i != '98')
 			{
 				putchar(',');
 				putchar(' ');
