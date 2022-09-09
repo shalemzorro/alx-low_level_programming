@@ -17,7 +17,7 @@ int main(void)
 			putchar((c % 10) + '0');
 			putchar(' ');
 			putchar((i / 10) + '0');
-			putchar((c % 10) + '0');
+			putchar((i % 10) + '0');
 
 			if ((c != '9') || (c == '9' && i != '9'))
 			{
