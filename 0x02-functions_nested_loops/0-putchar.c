@@ -16,12 +16,12 @@ int main(void)
 
 	{
 
-		_putchar(c[i]);
+		putchar(c[i]);
 		i++;
 
 	}
 
-	_putchar('\n');
+	putchar('\n');
 
 	return (0);
 }
