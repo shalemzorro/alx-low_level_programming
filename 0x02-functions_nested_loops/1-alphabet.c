@@ -1,4 +1,4 @@
-#include "_putchar.c"
+#include "main.h"
 
 /**
  * print_alphabet - Entry point
@@ -17,6 +17,6 @@ void print_alphabet(void)
 
 	}
 
-	_putchar('\n')
+	_putchar('\n');
 
 }
