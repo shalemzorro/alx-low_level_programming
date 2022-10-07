@@ -29,7 +29,7 @@ void _is_zero(char *argv[])
 	if (isn1 == 1 || isn2 == 1)
 	{
 		printf("0\n");
-		exit(0)
+		exit(0);
 	}
 }
 
