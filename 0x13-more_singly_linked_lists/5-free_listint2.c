@@ -1,24 +1,22 @@
 #include "lists.h"
 
 /**
- * free_listint - frees a listint_t list.
+ * free_listint2 - frees a liked list.
  * @head: pointer to the list.
  */
-void free_listint(listint_t *head)
+void free_listint2(listint_t **head)
 {
-	listint_t *actual_node;
-	listint_t *next_node;
+	listint_t *temp;
+	listint_t *curr;
 
-	if (head)
+	if (head != NULL)
 	{
-		actual_node = head;
-		next_node = head->next;
-		while (next_node)
+		curr = *head;
+		while ((temp = curr) != NULL)
 		{
-			free(actual_node);
-			actual_node = next_node;
-			next_node = next_node->next;
+			curr = curr->next;
+			free(temp);
 		}
-		free(actual_node);
+		*head = NULL;
 	}
 }
